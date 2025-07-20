@@ -1,0 +1,150 @@
+/* Base Reset & Font */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Main App Container */
+.App {
+  text-align: center;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+/* Header */
+.App-header {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.App h1 {
+  font-size: 2.5em;
+  color: #61dafb;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+/* Neumorphic Card */
+.card {
+  background-color: #2e3238;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.6),
+              -9px -9px 16px rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Labels */
+label {
+  display: block;
+  color: #a0a0a0;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  background-color: #2e3238;
+  border: none;
+  color: #e0e0e0;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.6),
+              inset -5px -5px 10px rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 16px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6),
+              inset -2px -2px 5px rgba(255, 255, 255, 0.05),
+              0 0 0 3px #61dafb;
+}
+
+/* Button */
+.calculate-button {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.calculate-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Output Section */
+.output {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.output .highlight {
+  color: #4caf50;
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+}
+
+/* Summary Items */
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.summary-item span:first-child {
+  color: #aaa;
+}
+
+.summary-item span:last-child {
+  font-weight: 600;
+  color: #61dafb;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .App h1 {
+    font-size: 1.8em;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+}
