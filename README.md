@@ -56,3 +56,34 @@ my-app/
 └── .gitignore
 Let me know if you want to use Vite, TypeScript, or Next.js instead.
 
+
+******
+To install only the node_modules (i.e., download all dependencies listed in your package.json), simply run:
+
+bash
+Copy
+Edit
+npm install
+or the shorthand:
+
+bash
+Copy
+Edit
+npm i
+🔍 What it does:
+Reads package.json
+
+Installs all dependencies into a node_modules/ folder
+
+Also creates a package-lock.json file if it's not already there
+
+✅ Use this when:
+
+You cloned a React project (or any Node project)
+
+You already have a package.json file in the folder
+
+You just want to set up the environment, not create a new app
+***
+
+
